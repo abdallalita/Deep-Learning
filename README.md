@@ -1,4 +1,4 @@
-## [Shoe Brand Image Classification](#Problem Statement)
+## [Shoe Brand Image Classification](#Problem-Statement)
 ### Problem Statement
 The goal of this project is to **classify shoe images** into different three brand categories, **Converse**, **Adidas**, **Nike**, using deep learning techniques (CNN).
 Specifically, we want to train a model that can accurately predict the brand category of an input image from a pre-defined set of class labels.
@@ -22,7 +22,7 @@ of your training set. Training a model on this artificially altered dataset hope
 I loaded the image data into **Datasets** format capable of being used with PyTorch, using the `torchvision.datasets.ImageFolder` function and later turn 
 the loaded images datasets into **DataLoader's**, which makes them iterable (batchify) so a model can go through learn the relationships between samples and targets 
 (features and labels), using ` torch.utils.data.DataLoader` function.
-I created a TinyVGG model class from the [https://poloclub.github.io/cnn-explainer/](CNN Explainer), training and test loop functions to train our model on
+I created a TinyVGG model class from the [https://poloclub.github.io/cnn-explainer/](CNN-Explainer), training and test loop functions to train our model on
 the training data and evaluate
 our model on the testing data, using 10 **epochs**.
 As for an **optimizer** and **loss function**, I used `torch.nn.CrossEntropyLoss()` since I'm working with **multi-class classification** data
